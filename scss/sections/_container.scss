@@ -1,0 +1,41 @@
+/*Contenido para las imagenes de fondo*/
+.container{
+    width: 100%;
+    height: 100vh;
+    animation: animate 30s ease-in-out infinite;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*-------------------------------------------*/
+
+/*Filtro de oscuridad aplicado sobre imagenes*/
+.filtro{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .3);
+}
+/*-------------------------------------------*/
+
+/*Desvanecimiento de imaganes de fondo*/
+@keyframes animate{
+    0%, 100%{
+        background-image: url("https://i.postimg.cc/bNtpwdkn/hoodie.jpg");
+    }
+    25%{
+        background-image: url("https://res.cloudinary.com/dunlvqhjt/image/upload/v1676346921/Streetwear/remeras_lvgpha.jpg");
+    }
+    50%{
+        background-image: url("https://res.cloudinary.com/dunlvqhjt/image/upload/v1676350301/Streetwear/jeans_w2sarq.jpg");
+    }
+    75%{
+        background-image: url("https://res.cloudinary.com/dunlvqhjt/image/upload/v1676348696/Streetwear/campera_x9nhq0.jpg");
+    }
+}
+/*---------------------------------------*/
+
+
+

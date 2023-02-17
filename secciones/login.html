@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Inicio Sesion</title>
+    <!--Link para el boton del menu desplegable en responsive-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!------------------>
+    <!--Link para Iconos--> 
+    <script src="https://kit.fontawesome.com/41ab746592.js" crossorigin="anonymous"></script>
+    <!------------------>
+</head>
+<body>
+    <header>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo">
+            <img src="https://res.cloudinary.com/dunlvqhjt/image/upload/v1676331626/Streetwear/logo2_dozysi.png" alt="">
+          </label>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a class="active" href="../secciones/login.html">Iniciar Sesion</a></li>
+            <li><a href="../secciones/nosotros.html">Nosotros</a></li>
+            <li><a href="../secciones/shop.html">SHOP</a></li> 
+         </ul>
+        </nav>
+      </header>
+
+    <div class="container-background"></div>  
+
+    <div class="formulario">
+        <h1>INGRESAR</h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" id="campo1" required>
+                <label class="sesion">Nombre de usuario</label>
+            </div>
+            <div class="username">
+                <input type="password" id="campo2" required>
+                <label class="sesion">Contraseña</label>
+            </div>
+            <input type="submit" value="Iniciar" id="campo3" href="../index.html">
+        </form>
+    </div> 
+</body>
+</html>

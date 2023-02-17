@@ -1,0 +1,121 @@
+/*-----------Pagina de Inicio de Sesion*-----------*/
+/*Ajustes para Background*/
+.container-background{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg, #000000,#1d1a35,#313131,#9f9f9f);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+/*------------*/
+/*Estilo de animacion para background*/
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+/*------------*/
+/*Caja del formulario*/
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border-radius: 15px;
+    background-color: $blanco;
+}
+/*Titulo (INGRESAR) del formulario*/
+.formulario h1{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #c0c0c0;
+    font-family: $font-titulos;
+}
+.formulario form{
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+/*------------*/
+/*Campos para rellenar del formulario*/
+form .username{
+    position: relative;
+    border-bottom: 1px solid $gris-claro;
+}
+.username input{
+    width: 100%;
+    padding: 25px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: $gris-claro;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.username span::before{
+    position: center;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $negro;
+    transition: .5s;
+}
+/*------------*/
+/*Transicion para cuando hacemos click en el campo a llenar desaparezca lo pedido del campo*/
+.username input:focus ~ label,
+.username input:focus ~ label:hover{
+    top: 15px;
+    color: #00000000;
+}
+
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width: 50%;
+}
+/*------------*/
+/*Boton de Iniciar Sesion*/
+input#campo3[type="submit"]{
+    margin-left: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+    height: 50px;
+    border: 2px solid;
+    background: $gris-oscuro;
+    border-radius: 25px;
+    font-size: 18px;
+    color: $blanco;
+    cursor: pointer;
+    outline: none;
+}
+/*------------*/
+/*Fin de Pagina de Inicio de Sesion*/
+/*-------------------------------------------*/
+
+/*Media Querys Dispositivos Pequeños a partir de 500px de pantalla*/
+@media (max-width: 550px){
+    .formulario{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        border-radius: 15px;
+        background-color: white;
+    }
+}

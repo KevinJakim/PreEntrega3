@@ -1,0 +1,61 @@
+/*-----------Inicio de Footer------------*/
+/*Estilos del Footer = Pie de Pagina*/
+.pie-pagina{
+    background-color: $oscuro;
+    width: 100%;
+  }
+    /*Ajustes para el grupo de columnas*/
+    .pie-pagina .grupo{
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 50px;
+      padding: 45px 0px;
+    }
+    /*------------*/
+    /*Estilos para los Subtitulos*/
+    .pie-pagina .grupo .box h2{
+      color: $blanco;
+      margin-bottom: 25px;
+      font-size: 20px;
+      font-family: $font-titulos;
+    }
+    /*------------*/
+    /*Estilos para los Parrafos*/
+    .pie-pagina .grupo .box p{
+      color: #efefef;
+    }
+    /*------------*/
+    /*Estilos de los Botones de Redes sociales*/
+    .pie-pagina .grupo .red-social a{
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: $blanco;
+      margin-right: 10px;
+      background-color: $gris-oscuro;
+      text-align: center;
+      transition: all .3s ease;
+    }
+      .pie-pagina .grupo .red-social a:hover{
+        background: $gris-claro;
+    }
+      /*------------*/
+/*-------------------------------------------*/
+
+/*Media Querys Dispositivos Pequeños a partir de 858px de pantalla*/  
+@media (max-width: 800px){
+    /*Ajustes para el pie de pagina*/
+    .pie-pagina .grupo{
+     width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+     padding: 35px 0px;
+    }
+  /*------------*/
+  }
+  
